@@ -20,6 +20,7 @@ public class PrimeFactorsTestTransformation {
     public void factors() throws Exception {
         assertThat(primeFactorsOf(1), isListOf());
         assertThat(primeFactorsOf(2), isListOf(2));
+        assertThat(primeFactorsOf(3), isListOf(3));
     }
 
 
