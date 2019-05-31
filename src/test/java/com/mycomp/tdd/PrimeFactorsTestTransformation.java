@@ -27,16 +27,17 @@ public class PrimeFactorsTestTransformation {
         assertThat(primeFactorsOf(7), isListOf(7));
         assertThat(primeFactorsOf(8), isListOf(2, 2, 2));
         assertThat(primeFactorsOf(9), isListOf(3, 3));
+        assertThat(primeFactorsOf(2 * 2 * 3 * 3 * 5 * 7 * 11 * 11 * 13), isListOf(2, 2, 3, 3, 5, 7, 11, 11, 13));
     }
 
 
     private List<Integer> primeFactorsOf(int n) {
         ArrayList<Integer> factors = new ArrayList<>();
 
-        for (int divisior = 2; n > 1; divisior++) {
+        for (int divisior = 2; n > 1; divisior++)
             for (; n % divisior == 0; n /= divisior)
                 factors.add(divisior);
-        }
+
         return factors;
     }
 }
