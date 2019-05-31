@@ -38,8 +38,6 @@ public class PrimeFactorsTestTransformation {
                 factors.add(divisior);
             divisior++;
         }
-        if (n > 1)
-            factors.add(n);
         return factors;
     }
 }
