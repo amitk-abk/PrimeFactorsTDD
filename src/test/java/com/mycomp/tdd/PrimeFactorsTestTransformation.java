@@ -27,7 +27,7 @@ public class PrimeFactorsTestTransformation {
     private List<Integer> primeFactorsOf(int n) {
         ArrayList<Integer> factors = new ArrayList<>();
         if (n > 1)
-            factors.add(2);
+            factors.add(n);
         return factors;
     }
 }
