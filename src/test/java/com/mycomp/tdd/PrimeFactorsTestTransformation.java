@@ -32,11 +32,10 @@ public class PrimeFactorsTestTransformation {
 
     private List<Integer> primeFactorsOf(int n) {
         ArrayList<Integer> factors = new ArrayList<>();
-        int divisior = 2;
-        while (n > 1) {
+
+        for (int divisior = 2; n > 1; divisior++) {
             for (; n % divisior == 0; n /= divisior)
                 factors.add(divisior);
-            divisior++;
         }
         return factors;
     }
