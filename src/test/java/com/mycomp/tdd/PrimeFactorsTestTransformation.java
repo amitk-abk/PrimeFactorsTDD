@@ -1,7 +1,6 @@
 package com.mycomp.tdd;
 
 import org.hamcrest.Matcher;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -20,6 +19,7 @@ public class PrimeFactorsTestTransformation {
     @Test
     public void factors() throws Exception {
         assertThat(primeFactorsOf(1), isListOf());
+        assertThat(primeFactorsOf(2), isListOf(2));
     }
 
 
