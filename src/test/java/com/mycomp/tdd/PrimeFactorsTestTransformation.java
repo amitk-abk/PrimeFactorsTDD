@@ -24,6 +24,7 @@ public class PrimeFactorsTestTransformation {
 
 
     private List<Integer> primeFactorsOf(int n) {
-        return new ArrayList<>();
+        ArrayList<Integer> factors = new ArrayList<>();
+        return factors;
     }
 }
