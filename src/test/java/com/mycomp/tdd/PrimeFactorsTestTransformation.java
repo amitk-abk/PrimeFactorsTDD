@@ -25,6 +25,7 @@ public class PrimeFactorsTestTransformation {
         assertThat(primeFactorsOf(5), isListOf(5));
         assertThat(primeFactorsOf(6), isListOf(2, 3));
         assertThat(primeFactorsOf(7), isListOf(7));
+        assertThat(primeFactorsOf(8), isListOf(2, 2, 2));
     }
 
 
