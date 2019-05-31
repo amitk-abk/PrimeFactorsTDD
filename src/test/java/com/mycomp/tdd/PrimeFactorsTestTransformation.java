@@ -4,6 +4,7 @@ import org.hamcrest.Matcher;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Arrays.asList;
@@ -23,6 +24,6 @@ public class PrimeFactorsTestTransformation {
 
 
     private List<Integer> primeFactorsOf(int n) {
-        return null;
+        return new ArrayList<>();
     }
 }
